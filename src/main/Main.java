@@ -6,7 +6,8 @@ import person.Singer;
 
 public class Main {
     public static void main(String[] args) {
-        Programmer  programmer = new Programmer();
+        // Programmer
+        Programmer programmer = new Programmer();
         programmer.setDesktop("Айкен");
         programmer.setSurName("Мурзакулова");
         programmer.setAge(17);
@@ -14,6 +15,7 @@ public class Main {
         programmer.slip();
         programmer.programing();
         System.out.println(programmer);
+        // Dancer
         Dancer dancer = new Dancer();
         dancer.setName("Артыгай");
         dancer.setSurName("Болотова");
@@ -22,6 +24,7 @@ public class Main {
         dancer.slip();
         dancer.dancing();
         System.out.println(dancer);
+        // Singer
         Singer singer = new Singer();
         singer.setName("Жазгул");
         singer.setSurName("Манасова");

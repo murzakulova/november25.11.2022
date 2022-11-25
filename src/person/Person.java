@@ -9,7 +9,6 @@ public class Person {
 
     }
 
-
     public void slip() {
         System.out.println("Уктайт");
     }

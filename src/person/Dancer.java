@@ -1,24 +1,22 @@
 package person;
 
 public class Dancer extends Person {
-        private String typesDances;
 
-        public Dancer(String name, String surName, int age) {
-            super(name, surName, age);
-        }
+    private String typesDances;
 
-        public Dancer() {
 
-        }
+    public Dancer(String name, String surName, int age, String typesDances) {
+        super(name, surName, age);
+        this.typesDances = typesDances;
+    }
 
-        public void dancing(){
-            System.out.println("Бийлейт");
-        }
+    public Dancer() {
 
-        public Dancer(String name, String surName, int age, String genre) {
-            super(name, surName, age);
-            this.typesDances = genre;
-        }
+    }
+
+    public void dancing() {
+        System.out.println("Бийлейт");
+    }
 
     public String getTypesDances() {
         return typesDances;
@@ -29,11 +27,11 @@ public class Dancer extends Person {
     }
 
     @Override
-        public String toString() {
-            return "Dancer-" +
-                    "genre:" + typesDances + '\'' +
-                    super.toString()+ " ";
-        }
+    public String toString() {
+        return "Dancer-" +
+                "genre:" + typesDances + '\'' +
+                super.toString() + " ";
     }
+}
 
 
